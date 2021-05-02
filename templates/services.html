@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{%block title%}
+Services | E-Shopper
+{%endblock%}
+{% block content %}
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<div class="contact-form">
+				<h2 class="title text-center">Services</h2>
+				<div class="status alert alert-success" style="display: none"></div>
+				<form action="/services" id="main-contact-form" class="contact-form row" name="contact-form" method="POST" enctype="multipart/form-data">
+					<div class="form-group col-md-6">
+						<input type="text" name="name" class="form-control" required="required" placeholder="Name">
+					</div>
+					<div class="form-group col-md-6">
+						<input type="email" name="email" class="form-control" required="required" placeholder="Email">
+					</div>
+					<div class="form-group col-md-6" >
+						<label id="stylelbl">Style Image: </label>
+						<input type="file" id="style" name="style" class="form-control" required=True>
+					</div>
+					<div class="form-group col-md-6" id="targetdiv">
+						<label>Target Image: </label>
+						<input type="file" id="target" name="target" class="form-control" >
+					</div>
+					<div class="form-group col-md-6">
+						<label for="services">Choose the service:</label>
+
+						<select class="form-select form-select-sm" name="options" id="services">
+  							<option value="makeup">Make Up Transfer</option>
+							<option value="fashion">Fashion Plus</option>
+						</select>
+					</div>
+					<div class="form-group col-md-12">
+						<button type="submit" name="submit" class="btn btn-primary pull-right">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+{% if predicted==True %}
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<div class="contact-form">
+				<h2 class="title text-center">Result</h2>
+			    {%if msg!=""%}
+					<h2>{{msg}}</h2>
+				{%endif%}	
+				{% if style_img != ""%}
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-2">
+						<h4>Input Image</h4>
+						<img height="240px" width="200px" src="{{url_for('static', filename=style_in)}}">
+					</div>
+					<div class="col-sm-2"></div>
+					<div class="col-sm-2">
+						<h4>Output Image</h4>
+						<img height="240px" width="200px" src="{{url_for('static', filename=style_out)}}">
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				{%endif%}	
+				<br><br>		
+			</div>
+		</div>
+	</div>
+{%endif%}
+
+{% endblock content %}
