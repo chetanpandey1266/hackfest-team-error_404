@@ -1,1 +1,2 @@
-# EShopper
+# Intelligent Fashion System
+
