@@ -31,6 +31,9 @@ Once the classifier is trained, our system gradually updates the outfit in order
 
 A generative adversial model to that transfers the makeup style of a person to other person's face. Using this network, user can try different make up styles and select which suits them the best.
 
+
+This is an implementation of this paper: [Lipstick ain’t enough: Beyond Color Matching for In-the-Wild Makeup Transfer](https://arxiv.org/pdf/2104.01867.pdf)
+
 ![Architecture](./readme_imgs/makeup_arch.jpg)
 
 
