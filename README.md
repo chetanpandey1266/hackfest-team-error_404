@@ -36,3 +36,17 @@ A generative adversial model to that transfers the makeup style of a person to o
 
 ## How to use
 
+Download the necessary files from the following link:
+ - [FashionPlus](https://drive.google.com/drive/folders/1KvCyxeoowHmVvTslO1VIhDtIExJwFzV3?usp=sharing): Create a `checkpoint` folder inside the `FashionPlus` folder and download all the files from the provided link to that folder
+ - [CPM](https://drive.google.com/drive/folders/1fWc3s6ia4-gnyTnr2UfQ_gaQ-HERWgbq?usp=sharing): Download all the files from the provided link and place them inside the `CPM` folder.
+
+Then open the main folder in your terminal and type the following commands to use the web app
+```python
+python3 app.py
+```
+Due to hardware restrictions, the make up transfer can't be integrated with web platform. So we have provided the google colab link of the following.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1wQt_uamj51rJNJ_6_dK3S3CMuwqefNtd?usp=sharing)
+
+
+
