@@ -1,7 +1,6 @@
-import argparse
-
-
+import argparse 
 def get_args():
+    
     parser = argparse.ArgumentParser()
     parser.add_argument("--checkpoint_pattern", default="./checkpoints/pattern.pth", type=str)
     parser.add_argument("--checkpoint_color", default="./checkpoints/color.pth", type=str)
