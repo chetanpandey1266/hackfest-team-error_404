@@ -9,6 +9,7 @@ import os
 import torch
 import numpy as np
 
+
 # Get model list for resume
 def get_model_list(dirname, key):
     if os.path.exists(dirname) is False:
