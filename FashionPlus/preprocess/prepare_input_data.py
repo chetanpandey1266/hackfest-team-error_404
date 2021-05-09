@@ -15,6 +15,7 @@ from PIL import Image
 print(os.getcwd())
 
 
+
 def get_composing_pieces_in_outfit(mask_dir, filename):
     mask = Image.open(os.path.join(mask_dir, filename))
     np_mask = np.array(mask)
