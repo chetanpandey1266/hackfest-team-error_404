@@ -15,6 +15,7 @@ from PIL import Image
 import copy
 import math
 
+
 def polygon_bbox(y_index, x_index):
     ''' Get the bounding box that contains the enitre polygon
         Args: y_index, x_index: index positions with value 1
