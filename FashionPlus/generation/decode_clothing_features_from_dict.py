@@ -15,6 +15,7 @@ import numpy as np
 import os
 from PIL import Image
 
+
 from options.test_options import TestOptions
 from data.base_dataset import get_params, get_transform, normalize
 from models.models import create_model
