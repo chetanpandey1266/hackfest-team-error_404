@@ -16,6 +16,7 @@ IMG_DIR=${ROOT_DIR}'/datasets/images/' # directiroy with RGB images
 SHAPE_GEN_PATH=${ROOT_DIR}'/checkpoint/' # directory with cGAN weights
 TEXTURE_GEN_PATH=${ROOT_DIR}'/checkpoint/' # directory with VAE weights
 
+
 # Extract shape encodings
 cd ../separate_vae
 ./scripts/encode_shape_features_demo.sh \
