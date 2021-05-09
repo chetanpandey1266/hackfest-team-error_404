@@ -15,6 +15,7 @@ import os
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
+
 opt = TrainOptions().parse()
 opt.nThreads = 1
 opt.batchSize = 1
