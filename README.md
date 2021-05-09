@@ -1,4 +1,4 @@
-# Intelligent Fashion System
+#  Intelligent Fashion System
 
 Developed an interactive web platform to improve the user experience while shopping online. 
 
