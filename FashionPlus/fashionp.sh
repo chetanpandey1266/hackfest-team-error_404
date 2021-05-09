@@ -17,4 +17,5 @@ cd ..
 cd  ./classification/data_dict/shape_and_feature
 bash scripts/edit_and_visualize_demo.sh $1 shape_and_texture True 2 100 0.25
 
+
 #######################################
