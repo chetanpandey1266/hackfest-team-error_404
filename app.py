@@ -1,4 +1,4 @@
-# from logging import debug
+
 from flask import Flask, render_template, request
 import os, subprocess
 from PIL import Image
