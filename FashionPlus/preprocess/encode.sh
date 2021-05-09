@@ -23,6 +23,7 @@ cd ../separate_vae
 	LABEL_DIR=${LABEL_DIR} \
 	SHAPE_GEN_PATH=${SHencode_shape_features_demoAPE_GEN_PATH}
 
+
 # Extract texture encoding
 cd ../generation
 ./scripts/encode_texture_features_demo.sh \
