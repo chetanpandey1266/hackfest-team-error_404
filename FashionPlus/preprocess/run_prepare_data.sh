@@ -7,6 +7,7 @@
 # LICENSE file in the root directory of this source tree.
 #
 
+
 ROOT_DIR='..'
 LABEL_DIR=${ROOT_DIR}'/datasets/labels/' #  directory with segmentation labels
 IMG_DIR=${ROOT_DIR}'/datasets/images/' # directiroy with RGB images
